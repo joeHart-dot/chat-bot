@@ -1,0 +1,12 @@
+{
+  "name": "chat-widget",
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @widget/embed --filter @widget/loader --filter @widget/mock-server dev",
+    "build": "pnpm --filter @widget/embed build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r --if-present test"
+  }
+}
